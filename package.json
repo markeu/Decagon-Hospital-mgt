@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A hospital management solution",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "json-server": "^0.15.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
