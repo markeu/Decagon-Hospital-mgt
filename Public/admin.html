@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Decagon-Lite | Dashboard</title>
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark coloring">
+        <a class="navbar-brand" href="#">Decagon Medical-Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#showcase">Welcome, Dr. Uchay Mark</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Patients</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+          </ul>
+        </div>
+    </nav>
+    <header id="header">
+      <div class="container">
+        <div class="row ref">
+          <div class="col-md-10">
+            <h1><i class="fas fa-cog"></i>Dashboard <small>Patients Management Platform</small></h1>
+          </div>
+          <div class="col-md-2 ">
+              <div class="dropdown create">
+                  <button  id="addBtn" class="btn btn-primary btn-responsive" type="button" data-target="#patients" data-toggle="modal">
+                    Create Patients
+                  </button>
+                </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb">
+          <li class="active"></li>
+        </div>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"> 
+              <div class="list-group">
+                  <a href="index.html" class="list-group-item list-group-item-action active main-color-bg">
+                      <i class="fas fa-cog"></i> Dashboard
+                  </a>
+                  <a href="pages.html" class="list-group-item list-group-item-action"><i class="fas fa-stethoscope"></i> Home-care <span class="badge">19</span></a>
+                  <a href="users.html" class="list-group-item list-group-item-action"><i class="fas fa-procedures"></i> Emergencies   <span class="badge">37</span></a>
+                  <a href="posts.tml" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Patients <span class="badge">132</span></a>
+              </div>
+              <div>
+                  <ul>
+                      <li>farm</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-6"> 
+                <div class="card">
+                  <h5 class="card-header main-color-bg">Newsletter</h5>
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aut eius molestias voluptatibus, pariatur molestiae nostrum, facilis illo eum possimus asperiores, accusantium unde labore blanditiis atque tenetur. Alias, saepe aliquid!....</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header main-color-bg">
+                    Patient Record Overview
+                  </div>  
+                <div class="card">
+                    <div class="card-header">
+                      <h3>Patients Engagements</h3>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table table-striped table-hover tableWist">
+                            <thead>
+                              <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Age (years)</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Phone-number</th>
+                                <th scope="col">Diagnosis-description</th>
+                              </tr>
+                            </thead>
+                            <tbody class="append">
+                              <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>  
+    <footer>
+        <nav class="container foot-nav">
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+<!-- modal for add patient -->
+    <div class="modal fade" id="patients" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn  btn-lg btn-block text-capitalize">Patient's data</button>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" id="ref">
+              <form id="form-selector" class="patient-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6" enableAutoComplete="true">
+                    <label for="clientName">Name</label>
+                    <input type="text" class="form-control" id="client-name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Address">Address</label>
+                    <input type="text" class="form-control" id="address" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-2">
+                      <label for="clientAge">Age</label>
+                      <input type="text" class="form-control"  id="client-age" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                     <label for="Phone-Number">Phone-Number</label>
+                     <input class="form-control" type="text"    id="phone-number" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="diagnosisDescription">Diagnosis-description</label>
+                  <textarea class="form-control" id="diagnosis-description" rows="3"></textarea>
+                </div>
+                <button type="button" id="modalbtn" class="btn btn-primary modalbtn" value="">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" onclick="javascript:window.location.reload()" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- modal for update patient --> -->
+    <div class="modal fade" id="updatModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn  btn-lg btn-block text-capitalize">Update Patient's data</button>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" id="ref">
+              <form id="form-selector" class="patient-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6" enableAutoComplete="true">
+                    <label for="client-name">Name</label>
+                    <input type="text" class="form-control" id="client-name" >
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-2">
+                      <label for="client-age">Age</label>
+                      <input type="text" class="form-control" id="client-age" >
+                  </div>
+                  <div class="form-group col-md-4">
+                     <label for="Phone-Number">Phone-Number</label>
+                     <input class="form-control" type="text" id="phone-number" >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="diagnosis-description">Diagnosis-description</label>
+                  <textarea class="form-control" id="diagnosis-description" rows="3"></textarea>
+                </div>
+                <button type="button" id="updateBtnModal" class="btn btn-primary updateBtnModal" value="">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" onclick="javascript:window.location.reload()" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!----modaldelete-->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Patient's Data Deleted</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <div class="modal-footer">
+              <button type="button" onclick="javascript:window.location.reload()" class="btn btn-danger text-lg-left" data-dismiss="modal">Ok</button>
+          </div>
+          </div>
+        </div>
+    </div>
+  <!--- modal data-->
+    <div class="modal fade displayModal" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Patient Data</h5>
+              <button type="button" class="close" data-dismiss="modal"  id="closemodaldata" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="disModal" id="single-data">
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeusrData">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/popper.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/all.min.js"></script>
+    <script src="home.js"></script>
+  </body>
+  

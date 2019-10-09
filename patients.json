@@ -56,5 +56,15 @@
         "diagnosisDescription": "Constipation",
         "id": 26
       }
+    ],
+    "users": [
+        {
+          "id": 1,
+          "first-name": "amani",
+          "last-name": "kanu",
+          "email": "uchemark@gmail.com",
+          "password": "12345",
+          "role": "admin"
+        }
     ]
   }
