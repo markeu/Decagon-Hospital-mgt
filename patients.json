@@ -5,7 +5,8 @@
         "address": "Water-lines, Ph",
         "age": "47",
         "PhoneNumber": "09087653478",
-        "diagnosisDescription": "Asmatics",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 11
       },
       {
@@ -13,7 +14,8 @@
         "address": "Nwodu",
         "age": "43",
         "PhoneNumber": "08122937888",
-        "diagnosisDescription": "Hypertension",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 13
       },
       {
@@ -21,7 +23,8 @@
         "address": "12, Woji GRA PORTHACOURT",
         "age": "35",
         "PhoneNumber": "08122789345",
-        "diagnosisDescription": "Typhoid",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 15
       },
       {
@@ -29,7 +32,8 @@
         "address": "12 Adenekan, street",
         "age": "47",
         "PhoneNumber": "09023678934",
-        "diagnosisDescription": "Hypertensive",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 20
       },
       {
@@ -37,7 +41,8 @@
         "address": "Mogwe",
         "age": "23",
         "PhoneNumber": "09078465678",
-        "diagnosisDescription": "Pregnancy 3rd Trimester",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 24
       },
       {
@@ -45,7 +50,8 @@
         "address": "Philips",
         "age": "23",
         "PhoneNumber": "09087337772",
-        "diagnosisDescription": "Malaria",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 25
       },
       {
@@ -53,7 +59,8 @@
         "address": "Jing",
         "age": "23",
         "PhoneNumber": "09078456734",
-        "diagnosisDescription": "Constipation",
+        "bloodGroup": "O+",
+        "genotype": "AA",
         "id": 26
       }
     ],

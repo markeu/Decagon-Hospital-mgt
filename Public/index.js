@@ -39,7 +39,8 @@ $(document).ready(() => {
         add += '<td>' + patient.age + '</td>'
         add += '<td>' + patient.address + '</td>'
         add += '<td>' + patient.PhoneNumber + '</td>'
-        add += '<td>' + patient.diagnosisDescription + '</td>'
+        add += '<td>' + patient.bloodGroup + '</td>'
+        add += '<td>' + patient.genotype + '</td>'
         add += '<td class="text-center">' + `<button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" data-toggle="modal" data-target="#updatModal"> Update</button>` + '</td>'
         add += '<td class="text-center">' + `<button  class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist type="button" data-target="#deleteModal" data-toggle="modal">Delete</button>` + '</td>'
         add += '</tr>';
