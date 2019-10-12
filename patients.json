@@ -1,77 +1,116 @@
 {
-    "patients": [
-      {
-        "name": "Tamunoibelema Depriye",
-        "address": "Water-lines, Ph",
-        "age": "47",
-        "PhoneNumber": "09087653478",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 11
-      },
-      {
-        "name": "Ibiye ",
-        "address": "Nwodu",
-        "age": "43",
-        "PhoneNumber": "08122937888",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 13
-      },
-      {
-        "name": "Ibiye Nwodu",
-        "address": "12, Woji GRA PORTHACOURT",
-        "age": "35",
-        "PhoneNumber": "08122789345",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 15
-      },
-      {
-        "name": "Machevalli Sigma",
-        "address": "12 Adenekan, street",
-        "age": "47",
-        "PhoneNumber": "09023678934",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 20
-      },
-      {
-        "name": "Philip",
-        "address": "Mogwe",
-        "age": "23",
-        "PhoneNumber": "09078465678",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 24
-      },
-      {
-        "name": "Nike ",
-        "address": "Philips",
-        "age": "23",
-        "PhoneNumber": "09087337772",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 25
-      },
-      {
-        "name": "Favour",
-        "address": "Jing",
-        "age": "23",
-        "PhoneNumber": "09078456734",
-        "bloodGroup": "O+",
-        "genotype": "AA",
-        "id": 26
-      }
-    ],
-    "users": [
-        {
-          "id": 1,
-          "first-name": "amani",
-          "last-name": "kanu",
-          "email": "uche@gmail.com",
-          "password": "12345",
-          "role": "admin"
-        }
-    ]
-  }
+  "patients": [
+    {
+      "name": "Tamunoibelema Depriye",
+      "address": "Water-lines, Ph",
+      "age": "47",
+      "PhoneNumber": "09087653478",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 11
+    },
+    {
+      "name": "Ibiye ",
+      "address": "Nwodu",
+      "age": "43",
+      "PhoneNumber": "08122937888",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 13
+    },
+    {
+      "name": "Ibiye Nwodu",
+      "address": "12, Woji GRA PORTHACOURT",
+      "age": "35",
+      "PhoneNumber": "08122789345",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 15
+    },
+    {
+      "name": "Machevalli Sigma",
+      "address": "12 Adenekan, street",
+      "age": "47",
+      "PhoneNumber": "09023678934",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 20
+    },
+    {
+      "name": "Philip",
+      "address": "Mogwe",
+      "age": "23",
+      "PhoneNumber": "09078465678",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 24
+    },
+    {
+      "name": "Nike ",
+      "address": "Philips",
+      "age": "23",
+      "PhoneNumber": "09087337772",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 25
+    },
+    {
+      "name": "Favour",
+      "address": "Jing",
+      "age": "23",
+      "PhoneNumber": "09078456734",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 26
+    },
+    {
+      "name": "Uloaku ",
+      "address": "Philips",
+      "age": "23",
+      "PhoneNumber": "09078465678",
+      "id": 27
+    },
+    {
+      "name": "uche mark",
+      "address": "12 adenekan street fadeyi lagos",
+      "age": "28",
+      "PhoneNumber": "08122937888",
+      "id": 28
+    },
+    {
+      "name": "Ikenna Mark Uche",
+      "address": "12 adenekan street fadeyi lagos",
+      "age": "23",
+      "PhoneNumber": "09087337772",
+      "id": 29
+    },
+    {
+      "name": "Uloaku ",
+      "address": "12 adenekan street fadeyi lagos",
+      "age": "23",
+      "PhoneNumber": "09078465678",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 30
+    },
+    {
+      "name": "u",
+      "address": "y",
+      "age": "23",
+      "PhoneNumber": "09078465678",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 31
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "first-name": "amani",
+      "last-name": "kanu",
+      "email": "uche@gmail.com",
+      "password": "12345",
+      "role": "admin"
+    }
+  ]
+}
