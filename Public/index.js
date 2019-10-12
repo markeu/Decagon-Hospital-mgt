@@ -36,8 +36,8 @@ $(document).ready(() => {
         let add = '<tr>';
         add += '<th scope="row">' + parseInt(data.indexOf(patient) + 1) + '</th>';
         add += '<td><a class="clientName" data-toggle="modal" data-target="#dataModal" onclick="displayPatient(${patient.id})">' + patient.name + '</a></td>';
-        add += '<td>' + patient.addresss + '</td>'
         add += '<td>' + patient.age + '</td>'
+        add += '<td>' + patient.address + '</td>'
         add += '<td>' + patient.PhoneNumber + '</td>'
         add += '<td>' + patient.diagnosisDescription + '</td>'
         add += '<td class="text-center">' + `<button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" data-toggle="modal" data-target="#updatModal"> Update</button>` + '</td>'
@@ -47,7 +47,7 @@ $(document).ready(() => {
         $('table tbody').append(add);
       });
       if (data.length < 1) {
-        $("p").append("You don't have any leave record")
+        $("p").append("You don't have any record")
       }
 
     })
