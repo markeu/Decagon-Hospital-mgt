@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="#showcase">Welcome, Dr. Uchay Mark</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Patients</a></li>
+              <li class="nav-item"><a class="nav-link" href="search.html">Search Patients</a></li>
               <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
           </ul>
         </div>
@@ -70,11 +70,21 @@
                   <div class="card-header main-color-bg">
                     Patient Record Overview
                   </div>  
-                <div class="card">
+                <div class="card">          
                     <div class="card-header">
                       <h3>Patients Engagements</h3>
                     </div>
                     <div class="card-body table-responsive">
+                        <div>      
+                            <form class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn"><i class="fas fa-search text-muted text-secondary"></i> </fa-search></button>
+                                    </div>
+                                </div>
+                            </form>
+                                  </div>
                         <table class="table table-striped table-hover tableWist">
                             <thead>
                               <tr>
@@ -206,23 +216,7 @@
           </div>
         </div>
     </div>
-  <!----modaldelete-->
-    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Are you sure ?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          <div class="modal-footer">
-              <button type="button" id="deleteBtn" class="btn btn-danger text-lg-left deleteBtn" data-dismiss="modal">Ok</button>
-              <button type="button" onclick="javascript:window.location.reload()" class="btn btn-danger text-lg-left" data-dismiss="modal">Close</button>
-          </div>
-          </div>
-        </div>
-    </div>
+
   <!--- modal data-->
     <div class="modal fade displayModal" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">

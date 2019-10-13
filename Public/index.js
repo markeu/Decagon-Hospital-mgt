@@ -55,6 +55,7 @@ $(document).ready(() => {
     $(document).on("click", ".deleteItem", function(e) {
     e.preventDefault();
     let id = $(this).attr("id")
+    if(confirm("Are you sure?")){
         $.ajax({
             url: `http://localhost:3000/patients/${id}`,
             type: 'DELETE',
@@ -66,7 +67,10 @@ $(document).ready(() => {
                 alert('Patient Data Deleted Successful')
             }
         });
-    });
+    } 
+});
+
+//Read single patients
 });
 
 //Add patients
@@ -115,9 +119,9 @@ $(document).ready(() => {
         });
       }
     });
-
-
 });
+
+
   
 
 
