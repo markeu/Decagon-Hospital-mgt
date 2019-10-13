@@ -211,13 +211,14 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Patient's Data Deleted</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Are you sure ?</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
           <div class="modal-footer">
-              <button type="button" onclick="javascript:window.location.reload()" class="btn btn-danger text-lg-left" data-dismiss="modal">Ok</button>
+              <button type="button" id="deleteBtn" class="btn btn-danger text-lg-left deleteBtn" data-dismiss="modal">Ok</button>
+              <button type="button" onclick="javascript:window.location.reload()" class="btn btn-danger text-lg-left" data-dismiss="modal">Close</button>
           </div>
           </div>
         </div>

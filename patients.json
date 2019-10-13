@@ -10,15 +10,6 @@
       "id": 11
     },
     {
-      "name": "Ibiye ",
-      "address": "Nwodu",
-      "age": "43",
-      "PhoneNumber": "08122937888",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "id": 13
-    },
-    {
       "name": "Ibiye Nwodu",
       "address": "12, Woji GRA PORTHACOURT",
       "age": "35",
@@ -35,72 +26,6 @@
       "bloodGroup": "O+",
       "genotype": "AA",
       "id": 20
-    },
-    {
-      "name": "Philip",
-      "address": "Mogwe",
-      "age": "23",
-      "PhoneNumber": "09078465678",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "id": 24
-    },
-    {
-      "name": "Nike ",
-      "address": "Philips",
-      "age": "23",
-      "PhoneNumber": "09087337772",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "id": 25
-    },
-    {
-      "name": "Favour",
-      "address": "Jing",
-      "age": "23",
-      "PhoneNumber": "09078456734",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "id": 26
-    },
-    {
-      "name": "Uloaku ",
-      "address": "Philips",
-      "age": "23",
-      "PhoneNumber": "09078465678",
-      "id": 27
-    },
-    {
-      "name": "uche mark",
-      "address": "12 adenekan street fadeyi lagos",
-      "age": "28",
-      "PhoneNumber": "08122937888",
-      "id": 28
-    },
-    {
-      "name": "Ikenna Mark Uche",
-      "address": "12 adenekan street fadeyi lagos",
-      "age": "23",
-      "PhoneNumber": "09087337772",
-      "id": 29
-    },
-    {
-      "name": "Uloaku ",
-      "address": "12 adenekan street fadeyi lagos",
-      "age": "23",
-      "PhoneNumber": "09078465678",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "id": 30
-    },
-    {
-      "name": "u",
-      "address": "y",
-      "age": "23",
-      "PhoneNumber": "09078465678",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "id": 31
     }
   ],
   "users": [
