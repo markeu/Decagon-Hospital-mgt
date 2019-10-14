@@ -16,6 +16,9 @@
 a{
     color: #b1acc2;
 }
+.searchButton{
+    margin-left: 2%;
+}
 .navbar-brand{
     font-size: 20px;
     font-weight: bold;
