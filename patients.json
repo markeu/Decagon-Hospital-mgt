@@ -26,6 +26,24 @@
       "bloodGroup": "O+",
       "genotype": "AA",
       "id": 20
+    },
+    {
+      "name": "Lugard Nwosu",
+      "address": "12 adenekan street fadeyi lagos",
+      "age": "45",
+      "PhoneNumber": "09045633636",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "id": 21
+    },
+    {
+      "name": "Hillary Simpson",
+      "address": "12 adenekan street fadeyi lagos",
+      "age": "23",
+      "PhoneNumber": "09078674523",
+      "bloodGroup": "O+",
+      "genotype": "AS",
+      "id": 22
     }
   ],
   "users": [

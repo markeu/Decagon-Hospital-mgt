@@ -35,7 +35,7 @@ $(document).ready(() => {
       $.map(data, patient => {
         let add = '<tr>';
         add += '<th scope="row">' + parseInt(data.indexOf(patient) + 1)+ '</th>';
-        add += '<td><a class="clientName" data-toggle="modal" data-target="#dataModal">' + patient.name + '</a></td>';
+        add += '<td><a  id="' + patient.id + '" class="clientName checkPatient" data-toggle="modal" data-target="#dataModal">' + patient.name + '</a></td>';
         add += '<td>' + patient.age + '</td>'
         add += '<td>' + patient.address + '</td>'
         add += '<td>' + patient.PhoneNumber + '</td>'
@@ -71,6 +71,25 @@ $(document).ready(() => {
 });
 
 //Read single patients
+    $(document).on("click", ".checkPatient", function(e) {
+        e.preventDefault();
+        let id = $(this).attr("id")
+        $.ajax({
+            method: 'GET',
+            url: `http://localhost:3000/patients/${id}`,
+            dataType: 'json'
+          }).done(data => {
+            let add = '<div class="display-data">';
+            add += '<div>' + '<span class="data-key">Name:</span>' + '<span>  ' + data.name + '</span></div>'
+            add += '<div>' + '<span class="data-key">Address:</span>' + '<span>  ' + data.address + '</span></div>'
+            add += '<div>' + '<span class="data-key">Age:</span>' + '<span>  ' + data.age + '</span></div>'
+            add += '<div>' + '<span class="data-key">Phone-Number:</span>' + '<span>  ' + data.PhoneNumber + '</span></div>'
+            add += '<div>' + '<span class="data-key">Blood-group:</span>' + '<span>  ' + data.bloodGroup + '</span></div>'
+            add += '<div>' + '<span class="data-key">Genotype:</span>' + '<span>  ' + data.genotype + '</span></div>'
+            add += '</div>'
+            $('.disModal').html(add);
+          });
+    });
 });
 
 //Add patients
