@@ -4,13 +4,13 @@
       "name": "Philips Wilson",
       "address": "Lugbe, Airport road Abuja ",
       "age": "56",
-      "PhoneNumber": "07034567890",
+      "PhoneNumber": "07034567896",
       "bloodGroup": "O+",
-      "genotype": "SS",
+      "genotype": "AS",
       "id": 21
     },
     {
-      "name": "Mach Delshi",
+      "name": "Macintosh Delshi",
       "address": "12 adenekan Fadeyi lagos",
       "age": "45",
       "PhoneNumber": "09078465678",
@@ -21,7 +21,7 @@
     {
       "name": "Phills Jones",
       "address": "12 Aguda street, maitama Abuja",
-      "age": "70",
+      "age": "21",
       "PhoneNumber": "09087337772",
       "bloodGroup": "A+",
       "genotype": "AA",

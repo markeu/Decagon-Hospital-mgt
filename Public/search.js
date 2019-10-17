@@ -4,24 +4,26 @@ $(document).ready(() => {
     $("form").submit((event) => {
         event.preventDefault();
         let phoneNumber = $("#phoneNumber").val();
-       
+
         $.ajax({
             type: "GET",
-            url: `http://localhost:3000/patients?phoneNumber=${phoneNumber}`,
-            success: function (data, patient) {
-                console.log(data)
-                $("table").show();
-                let add = '<tr>';
-                add += '<th scope="row">' + data[0].id + '</th>';
-                add += '<td>' +  data[0].name + '</td>';
-                add += '<td>' +  data[0].age + '</td>'
-                add += '<td>' +  data[0].address + '</td>'
-                add += '<td>' +  data[0].PhoneNumber + '</td>'
-                add += '<td>' +  data[0].bloodGroup + '</td>'
-                add += '<td>' +  data[0].genotype + '</td>'
-                add += '</tr>'; 
- 
-                $('table tbody').append(add);
+            url: 'http://localhost:3000/patients',
+            success: function (data) {
+               for(let i = 0; i < data.length; i++){
+                   if(phoneNumber == data[i].PhoneNumber){
+                    $("table").show();
+                    let add = '<tr>';
+                    add += '<th scope="row">' + data[i].id + '</th>';
+                    add += '<td>' +  data[i].name + '</td>';
+                    add += '<td>' +  data[i].age + '</td>'
+                    add += '<td>' +  data[i].address + '</td>'
+                    add += '<td>' +  data[i].PhoneNumber + '</td>'
+                    add += '<td>' +  data[i].bloodGroup + '</td>'
+                    add += '<td>' +  data[i].genotype + '</td>'
+                    add += '</tr>'; 
+                    $('table tbody').append(add);    
+                   }
+               }
             }
         });
     });
