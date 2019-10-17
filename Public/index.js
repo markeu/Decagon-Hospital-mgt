@@ -16,7 +16,7 @@ $(document).ready(() => {
                 type: 'GET',
                 dataType: 'json'
             }).done((data) => {
-                data.length === 0 ? alert('User login credentials incorrect') : window.location.replace("admin.html")         
+                data.length === 0 ? alert('Unauthorized access') : window.location.replace("admin.html")         
             })
         }
         return false;
@@ -41,20 +41,20 @@ $(document).ready(() => {
         add += '<td>' + patient.PhoneNumber + '</td>'
         add += '<td>' + patient.bloodGroup + '</td>'
         add += '<td>' + patient.genotype + '</td>'
-        add += '<td class="text-center">' + '<button id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg updateBtn" data-toggle="modal" data-target="#updatModal"> Update</button>' + '</td>'
+        add += '<td class="text-center">' + '<button id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg updateBtn" data-toggle="modal" data-target="#updatModal"> Edit </button>' + '</td>'
         add += '<td class="text-center">' + '<button <a href="#" id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist deleteItem type="button">Delete</button></a>' + '</td>'
         add += '</tr>'; 
         $('table tbody').append(add);
       });
       if (data.length < 1) {
-        $("p").append("You don't have any record")
+        $("p").append("You don't have any patient record")
       }
     });
 
 //delete item from database
     $(document).on("click", ".deleteItem", function(e) {
     e.preventDefault();
-    let id = $(this).attr("id")
+    let id = $( this ).attr("id")
     if(confirm("Are you sure?")){
         $.ajax({
             url: `http://localhost:3000/patients/${id}`,
@@ -91,8 +91,8 @@ $(document).ready(() => {
           });
     });
 
-//Update Patients details
-$(document).on("click", ".updateBtn", function(e) {
+//Fetch Patients details for update modal
+$(document).on("click", ".updateBtn", function() {
         let id = $(this).attr("id");
         let url = `http://localhost:3000/patients/${id}`;
         $.ajax({
@@ -110,12 +110,11 @@ $(document).on("click", ".updateBtn", function(e) {
 
         });
 
-        
+//Update patient's data       
     $("#updateMe").on("click", function(e) {
         e.preventDefault();
         let id = $("#updateMe").attr("value");         
         let url = `http://localhost:3000/patients/${id}`;
-        console.log(url)
 
         let name = $("input[type='text']#updateName").val();
         let address = $("input[type='text']#updateAddress").val();
@@ -132,15 +131,14 @@ $(document).on("click", ".updateBtn", function(e) {
           bloodGroup,
           genotype
         }
-        console.log(age)  
-        $.ajax({
+      
+    $.ajax({
             url: url,
             data: data,
             type: "PUT",
             success: function() {
               console.log(data);
-              alert("Patient details updated succefully!");
-            //window.location.assign("admin.html");
+              alert("Patient details updated succefully!");   
             },
             error: () => {
                 alert('oopp!.. error something when wrong')

@@ -2,38 +2,38 @@
   "patients": [
     {
       "name": "Philips Wilson",
-      "address": "Aso Villa, ABUJA",
-      "age": "20",
+      "address": "Lugbe, Airport road Abuja ",
+      "age": "56",
       "PhoneNumber": "07034567890",
       "bloodGroup": "O+",
-      "genotype": "AS",
+      "genotype": "SS",
       "id": 21
     },
     {
       "name": "Mach Delshi",
-      "address": "12 adenekan street fadeyi lagos",
-      "age": "23",
+      "address": "12 adenekan Fadeyi lagos",
+      "age": "45",
       "PhoneNumber": "09078465678",
       "bloodGroup": "A-",
-      "genotype": "O-",
+      "genotype": "O+",
       "id": 22
     },
     {
       "name": "Phills Jones",
-      "address": "12 Aguda close, maitama Abuja",
-      "age": "45",
+      "address": "12 Aguda street, maitama Abuja",
+      "age": "70",
       "PhoneNumber": "09087337772",
-      "bloodGroup": "A-",
+      "bloodGroup": "A+",
       "genotype": "AA",
       "id": 23
     },
     {
-      "name": "Lord Nwosu",
+      "name": "Fredrick Jaja",
       "address": "Festac, Lagos",
       "age": "45",
-      "PhoneNumber": "09087337772",
+      "PhoneNumber": "08122937888",
       "bloodGroup": "A-",
-      "genotype": "AA",
+      "genotype": "AS",
       "id": 24
     }
   ],
