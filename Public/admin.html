@@ -172,33 +172,37 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body" id="ref">
-              <form id="form-selector" class="patient-form">
-                <div class="form-row">
-                  <div class="form-group col-md-6" enableAutoComplete="true">
-                    <label for="client-name">Name</label>
-                    <input type="text" class="form-control" id="client-name" >
+                <form id="formSelector" class="patient-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6" enableAutoComplete="true">
+                      <label for="clientName">Name</label>
+                      <input type="text" class="form-control" id="updateName" >
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="Address">Address</label>
+                      <input type="text" class="form-control" id="updateAddress" >
+                    </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" >
+                  <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="clientAge">Age</label>
+                        <input type="text" class="form-control"  id="updateAge" >
+                    </div>
+                    <div class="form-group col-md-4">
+                       <label for="Phone-Number">Phone-Number</label>
+                       <input class="form-control" type="text"    id="updatePhonenumber" >
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="bloodGroup">Blood-group</label>
+                      <input class="form-control" type="text"    id="updateBloodGroup" >
+                   </div>
+                   <div class="form-group col-md-2">
+                    <label for="genotype">Genotype</label>
+                    <input class="form-control" type="text"    id="updateGenotype" >
+                 </div>
                   </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-2">
-                      <label for="client-age">Age</label>
-                      <input type="text" class="form-control" id="client-age" >
-                  </div>
-                  <div class="form-group col-md-4">
-                     <label for="Phone-Number">Phone-Number</label>
-                     <input class="form-control" type="text" id="phone-number" >
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="diagnosis-description">Diagnosis-description</label>
-                  <textarea class="form-control" id="diagnosis-description" rows="3"></textarea>
-                </div>
-                <button type="button" id="updateBtnModal" class="btn btn-primary updateBtnModal" value="">Submit</button>
-              </form>
+                  <button type="button" id="updateMe" class="btn btn-primary updatebtn" value="">Submit</button>
+                </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" onclick="javascript:window.location.reload()" data-dismiss="modal">Close</button>

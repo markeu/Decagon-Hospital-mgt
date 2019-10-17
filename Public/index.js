@@ -41,7 +41,7 @@ $(document).ready(() => {
         add += '<td>' + patient.PhoneNumber + '</td>'
         add += '<td>' + patient.bloodGroup + '</td>'
         add += '<td>' + patient.genotype + '</td>'
-        add += '<td class="text-center">' + `<button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" data-toggle="modal" data-target="#updatModal"> Update</button>` + '</td>'
+        add += '<td class="text-center">' + '<button id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg updateBtn" data-toggle="modal" data-target="#updatModal"> Update</button>' + '</td>'
         add += '<td class="text-center">' + '<button <a href="#" id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist deleteItem type="button">Delete</button></a>' + '</td>'
         add += '</tr>'; 
         $('table tbody').append(add);
@@ -90,6 +90,64 @@ $(document).ready(() => {
             $('.disModal').html(add);
           });
     });
+
+//Update Patients details
+$(document).on("click", ".updateBtn", function(e) {
+        let id = $(this).attr("id");
+        let url = `http://localhost:3000/patients/${id}`;
+        $.ajax({
+            type: "GET",
+            url,
+            success: function(data){
+                $("input[type='text']#updateName").val(`${data.name}`);
+                $("input[type='text']#updateAddress").val(`${data.address}`);
+                $("input[type='text']#updateAge").val(`${data.age}`);
+                $("input[type='text']#updatePhonenumber").val(`${data.PhoneNumber}`);
+                $("input[type='text']#updateBloodGroup").val(`${data.bloodGroup}`);
+                $("input[type='text']#updateGenotype").val(`${data.genotype}`);
+                $("#updateMe").attr("value", data.id);
+            }
+
+        });
+
+        
+    $("#updateMe").on("click", function(e) {
+        e.preventDefault();
+        let id = $("#updateMe").attr("value");         
+        let url = `http://localhost:3000/patients/${id}`;
+        console.log(url)
+
+        let name = $("input[type='text']#updateName").val();
+        let address = $("input[type='text']#updateAddress").val();
+        let age = $("input[type='text']#updateAge").val();
+        let PhoneNumber = $("input[type='text']#updatePhonenumber").val();
+        let bloodGroup =  $("input[type='text']#updateBloodGroup").val();
+        let genotype = $("input[type='text']#updateGenotype").val();
+
+        let data = {
+          name,
+          address,
+          age,
+          PhoneNumber,
+          bloodGroup,
+          genotype
+        }
+        console.log(age)  
+        $.ajax({
+            url: url,
+            data: data,
+            type: "PUT",
+            success: function() {
+              console.log(data);
+              alert("Patient details updated succefully!");
+            //window.location.assign("admin.html");
+            },
+            error: () => {
+                alert('oopp!.. error something when wrong')
+            }
+          });
+       });
+    });
 });
 
 //Add patients
@@ -107,12 +165,12 @@ $(document).ready(() => {
         let genotype = $('#genotype').val();
 
         let data = {
-            name: name,
-            address: address,
-            age: age,
-            PhoneNumber: PhoneNumber,
-            bloodGroup: bloodGroup,
-            genotype: genotype
+          name,
+          address,
+          age,
+          PhoneNumber,
+          bloodGroup,
+          genotype
          };
 
     if (name.trim().length < 3) {
