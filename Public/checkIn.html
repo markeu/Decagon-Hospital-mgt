@@ -47,28 +47,43 @@
                   </div>  
                 <div class="card">          
                     <div class="card-body table-responsive">
-                            <div>
-                                <form id="forM" action="http://localhost:3000/patients">
-                                    <div class="form-group mx-sm-3 mb-2">
-                                        <label for="phoneNumber" class="sr-only">Patient's No.</label>
-                                        <input type="number" class="form-control" id="phoneNumber" placeholder="Patients Phone">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary mb-2 searchButton" id="singlePatient">Check in</button>
-                                </form>
-                            </div>
-                        <table class="table table-striped table-hover tableWist">
+                        <table class="table table-striped table-hover">
                             <thead>
                               <tr>
                                 <th scope="col">Id</th>
                                 <th scope="col">Name</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Time</th>
+                                <th scope="col">Check-in Date</th>
+                                <th scope="col">Check-in Time</th>
+                                <th scope="col">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody class="checkOut">
+                              <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        
+                        <br>
+                        <table class="table table-striped table-hover" id="checkInTable">
+                            <thead>
+                              <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Check-out Date</th>
+                                <th scope="col">Check-out Time</th>
+                                <th scope="col">Status</th>
                               </tr>
                             </thead>
                             <tbody class="append">
                               <tr>
                                 <th scope="row"></th>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -82,6 +97,68 @@
           </div>
       </div>
     </section>  
+    <!-- CHECK-IN/CHECK-OUT MODAL -->
+
+    <div class="modal fade" id="checkInModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn  btn-lg btn-block text-capitalize"> Patient Check-in</button>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" >
+                <form id="checkIn" class="checkIn-form">
+        
+                  <div class="form-row">
+                    <div class="form-group col-md-4" enableAutoComplete="true">
+                        <label for="clientName">Name</label>
+                        <input type="text" class="form-control" id="checkInName" >
+                    </div>
+                    <div class="form-group col-md-2" enableAutoComplete="true">
+                            <label for="checkInAge">Age</label>
+                            <input type="text" class="form-control" id="checkInAge" >
+                    </div>
+                    <div class="form-group col-md-4" enableAutoComplete="true">
+                            <label for="checkInAddress">Address</label>
+                            <input type="text" class="form-control" id="checkInAddress" >
+                    </div>
+                    <div class="form-group col-md-2" enableAutoComplete="true">
+                            <label for="checkInPhoneNumber">Phone-number</label>
+                            <input type="text" class="form-control" id="checkInPhoneNumber" >
+                    </div>
+                    <div class="form-group col-md-2" enableAutoComplete="true">
+                            <label for="checkInBloodGroup">Blood-group</label>
+                            <input type="text" class="form-control" id="checkInBloodGroup" >
+                    </div>
+                    <div class="form-group col-md-2" enableAutoComplete="true">
+                            <label for="checkInGenotype">Genotype</label>
+                            <input type="text" class="form-control" id="checkInGenotype" >
+                    </div>
+
+                    <div class="form-group col-md-4">
+                       <label for="checkInStatus">Status</label>
+                       <input class="form-control" type="text"    id="checkInStatus" >
+                    </div>
+
+                   <div class="form-group col-md-6">
+                    <label for="checkInDate">Date</label>
+                    <input class="form-control" type="date"    id="checkInDate" >
+                 </div>
+                 <div class="form-group col-md-4">
+                    <label for="checkInTime">Time</label>
+                    <input class="form-control" type="time"    id="checkInTime" >
+                 </div>
+                  </div>
+                  <button type="button" id="checkInMe" class="btn btn-secondary checkInbtn" value="">Save Changes</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" onclick="javascript:window.location.reload()" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <footer>
         <nav class="container foot-nav">
             <ul>
@@ -97,6 +174,6 @@
     <script src="script/popper.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/all.min.js"></script>
-    <script src="#"></script>
+    <script src="checkIn.js"></script>
   </body>
   

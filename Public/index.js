@@ -123,6 +123,8 @@ $(document).on("click", ".updateBtn", function() {
         let PhoneNumber = $("input[type='text']#updatePhonenumber").val();
         let bloodGroup =  $("input[type='text']#updateBloodGroup").val();
         let genotype = $("input[type='text']#updateGenotype").val();
+        let date = new Date().toLocaleDateString("en-US");
+        let status = "checked_out";
 
         let data = {
           name,
@@ -130,8 +132,10 @@ $(document).on("click", ".updateBtn", function() {
           age,
           PhoneNumber,
           bloodGroup,
-          genotype
-        }
+          genotype,
+          date,
+          status
+        } 
       
     $.ajax({
             url: url,
@@ -155,13 +159,15 @@ $(document).ready(() => {
     submit.click((e) => {
         e.preventDefault();
         let id = sessionStorage.getItem("user");
-
+        
         let name = $('#client-name').val();
         let address = $('#address').val();
         let age = $("#client-age").val();
         let PhoneNumber = $("#phone-number").val();
         let bloodGroup = $('#bloodGroup').val();
         let genotype = $('#genotype').val();
+        let date = new Date().toLocaleDateString("en-US");
+        let status = "checked_out";
 
         let data = {
           name,
@@ -169,7 +175,9 @@ $(document).ready(() => {
           age,
           PhoneNumber,
           bloodGroup,
-          genotype
+          genotype,
+          date,
+          status
          };
 
     if (name.trim().length < 3) {

@@ -1,40 +1,63 @@
 {
   "patients": [
     {
-      "name": "Philips Wilson",
-      "address": "Lugbe, Airport road Abuja ",
-      "age": "56",
-      "PhoneNumber": "07034567896",
+      "name": "Ojo Mmadu",
+      "address": "123, Asa Road Aba, Abia",
+      "age": "21",
+      "PhoneNumber": "09078465678",
       "bloodGroup": "O+",
       "genotype": "AS",
+      "date": "1990-07-06",
+      "time": "14:03",
+      "status": "checked_in",
       "id": 21
     },
     {
-      "name": "Macintosh Delshi",
-      "address": "12 adenekan Fadeyi lagos",
-      "age": "45",
-      "PhoneNumber": "09078465678",
-      "bloodGroup": "A-",
-      "genotype": "O+",
-      "id": 22
-    },
-    {
-      "name": "Phills Jones",
-      "address": "12 Aguda street, maitama Abuja",
-      "age": "21",
-      "PhoneNumber": "09087337772",
-      "bloodGroup": "A+",
-      "genotype": "AA",
-      "id": 23
-    },
-    {
-      "name": "Fredrick Jaja",
+      "name": "Fredrick jojo",
       "address": "Festac, Lagos",
       "age": "45",
       "PhoneNumber": "08122937888",
       "bloodGroup": "A-",
       "genotype": "AS",
+      "date": "2019-10-17",
+      "time": "04:17",
+      "status": "checked_out",
       "id": 24
+    },
+    {
+      "name": "Lugard Nwosu",
+      "address": "12 Adenekan street Fadeyi Lagos",
+      "age": "37",
+      "PhoneNumber": "08122937888",
+      "bloodGroup": "A+",
+      "genotype": "AS",
+      "date": "2019-10-15",
+      "time": "14:45",
+      "status": "checked_out",
+      "id": 25
+    },
+    {
+      "name": "Pwavidon Baji",
+      "address": "23, Ring road Jos",
+      "age": "20",
+      "PhoneNumber": "09087337772",
+      "bloodGroup": "A+",
+      "genotype": "AA",
+      "date": "2019-10-15",
+      "time": "14:45",
+      "status": "checked_in",
+      "id": 26
+    },
+    {
+      "name": "Uloaku Chinyere",
+      "address": "12 Aguda close, maitama Abuja",
+      "age": "56",
+      "PhoneNumber": "09078465678",
+      "bloodGroup": "A-",
+      "genotype": "SS",
+      "date": "10/19/2019",
+      "status": "checked_out",
+      "id": 27
     }
   ],
   "users": [
