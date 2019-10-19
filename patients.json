@@ -55,8 +55,9 @@
       "PhoneNumber": "09078465678",
       "bloodGroup": "A-",
       "genotype": "SS",
-      "date": "10/19/2019",
-      "status": "checked_out",
+      "date": "2019-07-06",
+      "time": "00:09",
+      "status": "checked_in",
       "id": 27
     }
   ],

@@ -68,20 +68,10 @@ $(document).on("click", ".checkInButton", function() {
             let genotype = $("input[type='text']#checkInGenotype").val();
             let status =  $("input[type='text']#checkInStatus").val();;
     
-            let data = {
-                name,
-                address,
-                age,
-                PhoneNumber,
-                bloodGroup,
-                genotype,
-                date,
-                time,
-                status
-              } 
+            let data = { name, address, age, PhoneNumber, bloodGroup, genotype, date,  time,  status} 
     $.ajax({
-            url: url,
-            data: data,
+            url,
+            data,
             type: "PUT",
             success: function() {
                 alert("SUCCESSS ! ! !");   
