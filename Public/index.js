@@ -88,7 +88,6 @@ $(document).ready(() => {
             add += '<div>' + '<span class="data-key">Genotype:</span>' + '<span>  ' + data.genotype + '</span></div>'
             add += '</div>'
             $('.disModal').html(add);
-            // history.replaceState(null, null, 'hello');
           });
     });
 
@@ -124,7 +123,7 @@ $(document).on("click", ".updateBtn", function() {
         let bloodGroup =  $("input[type='text']#updateBloodGroup").val();
         let genotype = $("input[type='text']#updateGenotype").val();
         let date = new Date().toLocaleDateString("en-US");
-        let status = "checked_out";
+        let status = "Check-Out";
 
         let data = {
           name,
@@ -169,16 +168,7 @@ $(document).ready(() => {
         let date = new Date().toLocaleDateString("en-US");
         let status = "Check-Out";
 
-        let data = {
-          name,
-          address,
-          age,
-          PhoneNumber,
-          bloodGroup,
-          genotype,
-          date,
-          status
-         };
+        let data = { name, address, age, PhoneNumber, bloodGroup, genotype, date, status };
 
     if (name.trim().length < 3) {
         alert("Please enter a valid name");

@@ -7,8 +7,8 @@
       "PhoneNumber": "09078465678",
       "bloodGroup": "O+",
       "genotype": "AS",
-      "date": "1990-07-06",
-      "time": "14:03",
+      "date": "2019-10-17",
+      "time": "19:06",
       "status": "Check-In",
       "id": 21
     },
@@ -19,8 +19,9 @@
       "PhoneNumber": "08122937888",
       "bloodGroup": "A-",
       "genotype": "AS",
-      "date": "10/19/2019",
-      "status": "checked_out",
+      "date": "2019-10-06",
+      "time": "21:57",
+      "status": "Check-Out",
       "id": 24
     },
     {
@@ -70,6 +71,28 @@
       "time": "12:32",
       "status": "Check-In",
       "id": 28
+    },
+    {
+      "name": "Favour Ndubuisi Anaba",
+      "address": "126 Umuocham road, Aba",
+      "age": "7",
+      "PhoneNumber": "09023678934",
+      "bloodGroup": "AA+",
+      "genotype": "O-",
+      "date": "10/19/2019",
+      "status": "Check-Out",
+      "id": 29
+    },
+    {
+      "name": "Emmanuela Peters",
+      "address": "55 Abayi road, Aba",
+      "age": "13",
+      "PhoneNumber": "09023678934",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "date": "10/19/2019",
+      "status": "Check-Out",
+      "id": 30
     }
   ],
   "users": [

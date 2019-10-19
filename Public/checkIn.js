@@ -55,8 +55,8 @@ $(document).on("click", ".checkInButton", function() {
         $("#checkInMe").on("change click", function(e) {
             e.preventDefault();
             e.stopPropagation();
-            let me = $("#checkInMe").attr("value");         
-            let url = `http://localhost:3000/patients/${me}`;
+            let id = $("#checkInMe").attr("value");         
+            let url = `http://localhost:3000/patients/${id}`;
         
             let name = $("input[type='text']#checkInName").val();
             let date =  $("input[type='date']#checkInDate").val();
@@ -73,7 +73,7 @@ $(document).on("click", ".checkInButton", function() {
             url,
             data,
             type: "PUT",
-            success: function() {
+            success: () => {
                 alert("SUCCESSS ! ! !");   
             },
             error: () => {
