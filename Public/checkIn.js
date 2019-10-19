@@ -77,7 +77,7 @@ $(document).on("click", ".checkInButton", function() {
                 alert("SUCCESSS ! ! !");   
             },
             error: () => {
-                alert('oopp!.. error something when wrong')
+                alert('oopp!.. error something went wrong')
             }
             });
         });
