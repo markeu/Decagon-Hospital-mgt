@@ -167,7 +167,7 @@ $(document).ready(() => {
         let bloodGroup = $('#bloodGroup').val();
         let genotype = $('#genotype').val();
         let date = new Date().toLocaleDateString("en-US");
-        let status = "checked_out";
+        let status = "Check-Out";
 
         let data = {
           name,

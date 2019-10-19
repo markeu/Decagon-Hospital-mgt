@@ -7,7 +7,7 @@ $(document).ready(() => {
         dataType: 'json'
       }).done(data => {
         $.map(data, patient => {
-            if(patient.status === "checked_out"){
+            if(patient.status === "Check-Out"){
                 let add = '<tr>';
                 add += '<th scope="row">' + parseInt(data.indexOf(patient) + 1) + '</th>';
                 add += '<td>' +  patient.name + '</td>';
@@ -42,7 +42,7 @@ $(document).on("click", ".checkInButton", function() {
             url,
             success: function(data,){
                 $("input[type='text']#checkInName").val(`${data.name}`);
-                $("input[type='text']#checkInStatus").val(`${data.status}`);
+                $("select#checkInStatus").val(`${data.status}`);
                 $("input[type='text']#checkInAge").val(`${data.age}`);
                 $("input[type='text']#checkInAddress").val(`${data.address}`);
                 $("input[type='text']#checkInPhoneNumber").val(`${data.PhoneNumber}`);
@@ -66,7 +66,7 @@ $(document).on("click", ".checkInButton", function() {
             let PhoneNumber = $("input[type='text']#checkInPhoneNumber").val();
             let bloodGroup =  $("input[type='text']#checkInBloodGroup").val();
             let genotype = $("input[type='text']#checkInGenotype").val();
-            let status =  $("input[type='text']#checkInStatus").val();;
+            let status =  $("select#checkInStatus").val();;
     
             let data = { name, address, age, PhoneNumber, bloodGroup, genotype, date,  time,  status} 
     $.ajax({

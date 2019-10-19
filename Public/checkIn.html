@@ -135,21 +135,22 @@
                             <input type="text" class="form-control" id="checkInGenotype" >
                     </div>
                     <br>
-
                     <div class="form-group col-md-4">
-                       <label for="checkInStatus">Status</label>
-                       <input class="form-control" type="text"    id="checkInStatus" >
+                        <label for="checkInStatus">Status</label>
+                        <select id="checkInStatus" class="form-control form-control-sm" required>
+                            <option value="Check-Out">Check-Out</option>
+                            <option value="Check-In">Check-In</option>
+                        </select>
                     </div>
-
-                   <div class="form-group col-md-6">
+                <div class="form-group col-md-6">
                     <label for="checkInDate">Date</label>
                     <input class="form-control" type="date"    id="checkInDate" >
-                 </div>
-                 <div class="form-group col-md-4">
+                </div>
+                <div class="form-group col-md-4">
                     <label for="checkInTime">Time</label>
                     <input class="form-control" type="time"    id="checkInTime" >
-                 </div>
-                  </div>
+                </div>
+                </div>
                   <button type="button" id="checkInMe" class="btn btn-secondary checkInbtn main-color-bg" value="">Save Changes</button>
                 </form>
             </div>

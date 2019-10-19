@@ -9,18 +9,17 @@
       "genotype": "AS",
       "date": "1990-07-06",
       "time": "14:03",
-      "status": "checked_in",
+      "status": "Check-In",
       "id": 21
     },
     {
-      "name": "Fredrick jojo",
+      "name": "Fredrick Jojo",
       "address": "Festac, Lagos",
       "age": "45",
       "PhoneNumber": "08122937888",
       "bloodGroup": "A-",
       "genotype": "AS",
-      "date": "2019-10-17",
-      "time": "04:17",
+      "date": "10/19/2019",
       "status": "checked_out",
       "id": 24
     },
@@ -33,7 +32,7 @@
       "genotype": "AS",
       "date": "2019-10-15",
       "time": "14:45",
-      "status": "checked_out",
+      "status": "Check-Out",
       "id": 25
     },
     {
@@ -45,7 +44,7 @@
       "genotype": "AA",
       "date": "2019-10-15",
       "time": "14:45",
-      "status": "checked_in",
+      "status": "Check-Out",
       "id": 26
     },
     {
@@ -56,9 +55,21 @@
       "bloodGroup": "A-",
       "genotype": "SS",
       "date": "2019-06-05",
-      "time": "14:45",
-      "status": "checked_in",
+      "time": "17:06",
+      "status": "Check-In",
       "id": 27
+    },
+    {
+      "name": "Miracle Obed",
+      "address": "12 Aguda close, maitama Abuja",
+      "age": "29",
+      "PhoneNumber": "09123456789",
+      "bloodGroup": "A",
+      "genotype": "AS",
+      "date": "2019-10-05",
+      "time": "12:32",
+      "status": "Check-In",
+      "id": 28
     }
   ],
   "users": [
