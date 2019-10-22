@@ -79,8 +79,9 @@
       "PhoneNumber": "09023678934",
       "bloodGroup": "AA+",
       "genotype": "O-",
-      "date": "10/19/2019",
-      "status": "Check-Out",
+      "date": "2019-10-19",
+      "time": "01:56",
+      "status": "Check-In",
       "id": 29
     },
     {
@@ -90,9 +91,22 @@
       "PhoneNumber": "09023678934",
       "bloodGroup": "O+",
       "genotype": "AA",
-      "date": "10/19/2019",
-      "status": "Check-Out",
+      "date": "2019-10-19",
+      "time": "07:01",
+      "status": "Check-In",
       "id": 30
+    },
+    {
+      "name": "Eucharia Furro Ogolo",
+      "address": "Opobo, town Rivers state",
+      "age": "81",
+      "PhoneNumber": "09045633636",
+      "bloodGroup": "A-",
+      "genotype": "AA",
+      "date": "10/20/2019",
+      "status": "Check-Out",
+      "time": "19:06",
+      "id": 31
     }
   ],
   "users": [

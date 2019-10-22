@@ -167,8 +167,10 @@ $(document).ready(() => {
         let genotype = $('#genotype').val();
         let date = new Date().toLocaleDateString("en-US");
         let status = "Check-Out";
+        let time = "19:06";
+       
 
-        let data = { name, address, age, PhoneNumber, bloodGroup, genotype, date, status };
+        let data = { name, address, age, PhoneNumber, bloodGroup, genotype, date, status, time};
 
     if (name.trim().length < 3) {
         alert("Please enter a valid name");
