@@ -41,6 +41,7 @@ $(document).ready(() => {
         add += '<td>' + patient.PhoneNumber + '</td>'
         add += '<td>' + patient.bloodGroup + '</td>'
         add += '<td>' + patient.genotype + '</td>'
+        add += '<td>' + patient.status + '</td>'
         add += '<th class="text-center">' + '<button id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg updateBtn" data-toggle="modal" data-target="#updatModal"> Edit </button>' + '</th>'
         add += '<th class="text-center">' + '<button <a href="#" id="' + patient.id + '" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist deleteItem type="button">Delete</button></a>' + '</th>'
         add += '</tr>'; 
