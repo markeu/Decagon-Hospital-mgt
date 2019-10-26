@@ -6,21 +6,19 @@
       "age": "21",
       "PhoneNumber": "09078465678",
       "bloodGroup": "O+",
-      "genotype": "AS",
-      "date": "2019-10-17",
-      "time": "19:06",
-      "status": "Check-In",
+      "genotype": "AA",
+      "date": "10/26/2019",
+      "status": "Check-Out",
       "id": 21
     },
     {
       "name": "Fredrick Jojo",
       "address": "Festac, Lagos",
       "age": "45",
-      "PhoneNumber": "08122937888",
+      "PhoneNumber": "08122937889",
       "bloodGroup": "A-",
       "genotype": "AS",
-      "date": "2019-10-06",
-      "time": "21:57",
+      "date": "10/26/2019",
       "status": "Check-Out",
       "id": 24
     },
@@ -49,18 +47,6 @@
       "id": 26
     },
     {
-      "name": "Uloaku Chinyere",
-      "address": "12 Aguda close, maitama Abuja",
-      "age": "56",
-      "PhoneNumber": "09078465678",
-      "bloodGroup": "A-",
-      "genotype": "SS",
-      "date": "2019-06-05",
-      "time": "17:06",
-      "status": "Check-In",
-      "id": 27
-    },
-    {
       "name": "Miracle Obed",
       "address": "12 Aguda close, maitama Abuja",
       "age": "29",
@@ -79,22 +65,10 @@
       "PhoneNumber": "09023678934",
       "bloodGroup": "AA+",
       "genotype": "O-",
-      "date": "2019-10-19",
-      "time": "01:56",
+      "date": "2019-10-26",
+      "time": "03:30",
       "status": "Check-In",
       "id": 29
-    },
-    {
-      "name": "Emmanuela Peters",
-      "address": "55 Abayi road, Aba",
-      "age": "13",
-      "PhoneNumber": "09023678934",
-      "bloodGroup": "O+",
-      "genotype": "AA",
-      "date": "2019-10-19",
-      "time": "07:01",
-      "status": "Check-In",
-      "id": 30
     },
     {
       "name": "Eucharia Furro Ogolo",
@@ -103,9 +77,9 @@
       "PhoneNumber": "09045633636",
       "bloodGroup": "A-",
       "genotype": "AA",
-      "date": "10/20/2019",
-      "status": "Check-Out",
-      "time": "19:06",
+      "date": "2019-10-25",
+      "time": "14:34",
+      "status": "Check-In",
       "id": 31
     }
   ],
@@ -117,6 +91,50 @@
       "email": "uche@gmail.com",
       "password": "12345",
       "role": "admin"
+    }
+  ],
+  "status": [
+    {
+      "id": "21",
+      "checkIn_time": "02:34",
+      "checkIn_date": "2019-10-24",
+      "checkOut_time": "08:34",
+      "checkOut_date": "2019-10-26"
+    },
+    {
+      "id": "31",
+      "checkIn_time": "02:34",
+      "checkIn_date": "2019-10-24",
+      "checkOut_time": "07:34",
+      "checkOut_date": "2019-10-26"
+    },
+    {
+      "id": "27",
+      "checkIn_time": "05:35",
+      "checkIn_date": "2019-10-25",
+      "checkOut_time": "21:00",
+      "checkOut_date": "2019-10-29"
+    },
+    {
+      "id": "30",
+      "checkIn_time": "02:48",
+      "checkIn_date": "2017-08-13",
+      "checkOut_time": "23:00",
+      "checkOut_date": "2018-02-03"
+    },
+    {
+      "id": "29",
+      "checkIn_time": "23:47",
+      "checkIn_date": "2018-06-29",
+      "checkOut_time": "20:30",
+      "checkOut_date": "2019-01-13"
+    },
+    {
+      "id": "28",
+      "checkIn_time": "07:35",
+      "checkIn_date": "2019-03-27",
+      "checkOut_time": "12:41",
+      "checkOut_date": "2019-10-29"
     }
   ]
 }
