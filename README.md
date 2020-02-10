@@ -1,5 +1,5 @@
 # Decagon-Hospital-mgt
-# Decagon-Hospital-mgt
+
 A hospital management solution is a platform where an admin can carry out some patient managemnt features for ease of profiling.
 
 
